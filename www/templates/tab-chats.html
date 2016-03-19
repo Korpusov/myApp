@@ -1,0 +1,22 @@
+<ion-view view-title="Chats">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="list">
+            <a class="item item-avatar" ng-repeat="chat in chats">
+                <img src="" alt="">
+                <h2>{{chat.author}}</h2>
+                <p>{{chat.message}}</p>
+
+            </a>
+        </div>
+        <form>
+            <div class="list">
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper">
+                        <input type="text" placeholder="Введите текст" ng-model="chat.message">
+                    </label>
+                    <button class="button button-positive ion ion-ios-7-chatbubble" ng-click="sendChat(chat)"></button>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,37 @@
+<ion-view view-title="Dashboard">
+    <ion-content class="padding">
+        <div ng-controller="DashCtrl">
+            <h1 class="text-center">Расскажите о своей квартире</h1>
+            <div class="row">
+                <div class="button-bar">
+                    <a class="button" ng-click="number.room = number.room - 1">-</a>
+                    <a class="button" ng-init='number.room = 1'>{{number.room}} комната</a>
+                    <a class="button" ng-click="number.room = number.room + 1">+</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button-bar">
+                    <a class="button" ng-click="number.WC = number.WC - 1">-</a>
+                    <a class="button" ng-init='number.WC = 1'>{{number.WC}} санузел</a>
+                    <a class="button" ng-click="number.WC = number.WC + 1">+</a>
+                </div>
+            </div>
+            <div class="list">
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Укажите площадь вашей квартиры
+                    </div>
+                    <select ng-model="scale">
+                        <option selected>До 40 квадратных метров</option>
+                        <option>от 40-60 квадратных метров</option>
+                        <option>от 60-80 квадратных метров</option>
+                        <option>Более 80 квадратных метров</option>
+                    </select>
+                </label>
+            </div>
+            <button class="button button-full button-balanced" ng-click="next()">
+                Далее
+            </button>
+        </div>
+    </ion-content>
+</ion-view>
