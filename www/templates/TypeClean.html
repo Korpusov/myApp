@@ -1,36 +1,31 @@
-<ion-view view-title="TypeClean">
-    <ion-content overflow-scroll="true" padding="true" class="has-header">
-        <div ng-controller="TypeCleanCtrl">
-            <div class="bar bar-header">
-                <h2 class="title">Выберите тип уборки</h2>
-            </div>
-            <br>
-            <br>
-            <br>
-            <p>{{numberTypeClean}}</p>
-            <button class="button button-block button-stable" ng-click="numberTypeClean = 0">
+<ion-view view-title="Тип уборки">
+    <ion-content class="has-header" scroll="false" padding="true" ng-controller="TypeCleanCtrl">
+        <div class="bar bar-header">
+            <h1 class="title">Выберите тип уборки</h1>
+        </div>
+        <br><br><br>
+        <div class="list" id="listType" ng-click="setActive($event)">
+            <button class="button button-block button-stable" id="HourID" ng-click="numberTypeClean = 0">
                 Уборка за час
             </button>
             <button class="button button-clear button-positive" ng-click="infoCleanHour()">
                 Подробнее
             </button>
-            <button class="button button-block button-stable" ng-click="numberTypeClean = 1">
+            <button class="button button-block button-stable" id="GeneralID" ng-click="numberTypeClean = 1">
                 Генеральная уборка
             </button>
             <button class="button button-clear button-positive" ng-click="infoGeneral()">
                 Подробнее
             </button>
-            <button class="button button-block button-stable" ng-click="numberTypeClean = 2">
+            <button class="button button-block button-stable" id="RepairID" ng-click="numberTypeClean = 2">
                 Уборка после ремонта
             </button>
             <button class="button button-clear button-positive" ng-click="infoRepair()">
                 Подробнее
             </button>
-            <div class="bar bar-footer">
-                <button class="button button-full button-balanced" ng-click="next()">
-                    Далее
-                </button>
-            </div>
+        </div>
+        <div class="bar bar-footer bar-balanced">
+            <a class="title" ng-click="next()">Далее</a>
         </div>
     </ion-content>
 </ion-view>

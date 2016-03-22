@@ -1,9 +1,11 @@
-<ion-view view-title="Finish">
-    <ion-content overflow-scroll="true" padding="true" class="has-header" ng-controller="FinishCtrl">
+<ion-view view-title="Данные">
+    <ion-content overflow-scroll="true" scroll="true" padding="true" ng-controller="FinishCtrl">
         <div class="bar bar-header">
             <h2 class="title">Куда нам необходимо приехать</h2>
         </div>
-        <br><br><br>
+        <br>
+        <br>
+        <br>
         <div class="list">
             <label class="item item-input">
                 <input type="text" placeholder="Введите ваш номер телефона" ng-model="phone">
@@ -21,10 +23,8 @@
                 <input type="text" placeholder="Номер квартиры" ng-model="numberApartment">
             </label>
         </div>
-        <div class="bar bar-footer">
-            <button class="button button-full button-balanced" ng-click="finish()">
-                Далее
-            </button>
+        <div class="button button-block button-balanced" ng-click="finish()">
+            Заказать
         </div>
     </ion-content>
 </ion-view>

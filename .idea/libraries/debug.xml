@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/platforms/android/build/intermediates/pre-dexed/debug/debug_206907b1d0ff166a37cf5d3b5c54142fdbf161bd.jar!/" />
+      <root url="jar://$PROJECT_DIR$/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_f0920bb418ea3d90b59a9f5280c8cc877831b841.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
